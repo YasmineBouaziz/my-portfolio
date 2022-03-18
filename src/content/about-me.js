@@ -11,7 +11,7 @@ export default [
     {
       input: 'Yas.cv',
       return:
-        '"<a rel="noopener" href="https://github.com/YasmineBouaziz/my-portfolio/blob/main/public/Yasmine_s_Resume.pdf" target="_blank">yas.pdf</a>"',
+        '"<a rel="noopener" href="https://github.com/YasmineBouaziz/my-portfolio/raw/main/public/Yasmine_s_Resume.pdf" target="_blank">yas.pdf</a>"',
     },
     {
       input: 'Yas.education',
