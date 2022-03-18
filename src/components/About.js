@@ -6,13 +6,13 @@ import './_About.scss'
 const About = (props) => {
     return (
       <div className="about-container">
-        <div className="terminal">
-          <div className="terminal-header">
+        <div className="">
+          <div className="-header">
             <div className="header-button red" />
             <div className="header-button yellow" />
             <div className="header-button green" />
           </div>
-          <div className="terminal-window">
+          <div className="-window">
             <Statements statements={props.statements} />
           </div>
         </div>
