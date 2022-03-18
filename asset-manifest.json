@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "//yasminebouaziz.github.io/my-portfolio/static/css/main.015248b8.css",
+    "main.js": "//yasminebouaziz.github.io/my-portfolio/static/js/main.68e65fb9.js",
+    "static/js/787.128fc6e9.chunk.js": "//yasminebouaziz.github.io/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/pokemon.png": "//yasminebouaziz.github.io/my-portfolio/static/media/pokemon.fa2d07aebb8d2255d9c3.png",
+    "static/media/Letterly.png": "//yasminebouaziz.github.io/my-portfolio/static/media/Letterly.160147f8b66a576202f2.png",
+    "index.html": "//yasminebouaziz.github.io/my-portfolio/index.html",
+    "main.015248b8.css.map": "//yasminebouaziz.github.io/my-portfolio/static/css/main.015248b8.css.map",
+    "main.68e65fb9.js.map": "//yasminebouaziz.github.io/my-portfolio/static/js/main.68e65fb9.js.map",
+    "787.128fc6e9.chunk.js.map": "//yasminebouaziz.github.io/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.015248b8.css",
+    "static/js/main.68e65fb9.js"
+  ]
+}
