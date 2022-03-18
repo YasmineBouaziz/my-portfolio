@@ -3,8 +3,7 @@ import Typewriter from './TypeWriter';
 import './_Intro.scss'
 
 
-class Intro extends React.PureComponent {
-  render() {
+const Intro = () => {
     return (
       <div className="intro-container">
         <Typewriter className="intro-title" text="Yasmine Bouaziz" />
@@ -14,7 +13,6 @@ class Intro extends React.PureComponent {
         </div>
       </div>
     );
-  }
 }
 
 export default Intro;

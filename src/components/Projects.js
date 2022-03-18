@@ -2,28 +2,23 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './_Projects.scss'
 
-class ProjectSkill extends React.PureComponent {
-  render() {
-    return <span className="project-skill">{this.props.skill}</span>;
-  }
+const ProjectSkill = (props) => {
+    return <span className="project-skill">{props.skill}</span>;
 }
 
-class ProjectSkills extends React.PureComponent {
-  render() {
+const ProjectSkills = (props) => {
     return (
       <div className="project-skills">
-        {this.props.skills.map((skill, index) => {
+        {props.skills.map((skill, index) => {
           return <ProjectSkill skill={skill} key={index} />;
         })}
       </div>
     );
-  }
 }
 
-class ProjectLinks extends React.PureComponent {
-  render() {
+const ProjectLinks = (props) => {
     // const { github, preview } = this.props.links;
-    const { github, site } = this.props.links;
+    const { github, site } = props.links;
     return (
       <div className="project-links">
         {/* <a
@@ -57,13 +52,11 @@ class ProjectLinks extends React.PureComponent {
           </div>
       </div>
     );
-  }
 }
 
-class ProjectCard extends React.PureComponent {
-  render() {
-    const { image, title, description, skills, links } = this.props;
-    const { github }  = this.props.links ;
+const ProjectCard = (props) => {
+    const { image, title, description, skills, links } = props;
+    const { github }  = props.links ;
 
     return (
       <div className="project-card">
@@ -85,12 +78,10 @@ class ProjectCard extends React.PureComponent {
         </div>
       </div>
     );
-  }
 }
 
-class Projects extends React.PureComponent {
-  render() {
-    const { projects } = this.props;
+const Projects = (props) => {
+    const { projects } = props;
     return (
       <div className="projects-container">
         {projects.map(proj => (
@@ -106,7 +97,6 @@ class Projects extends React.PureComponent {
         ))}
       </div>
     );
-  }
 }
 
 export default Projects;
