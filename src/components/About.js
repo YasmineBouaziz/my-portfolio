@@ -1,8 +1,9 @@
 import React from 'react';
 import './_About.scss'
 
-class About extends React.PureComponent {
-  render() {
+
+
+const About = (props) => {
     return (
       <div className="about-container">
         <div className="terminal">
@@ -12,19 +13,17 @@ class About extends React.PureComponent {
             <div className="header-button green" />
           </div>
           <div className="terminal-window">
-            <Statements statements={this.props.statements} />
+            <Statements statements={props.statements} />
           </div>
         </div>
       </div>
     );
-  }
 }
 
-class Statements extends React.PureComponent {
-  render() {
+const Statements = ( props ) => {
     return (
       <div>
-        {this.props.statements.map((statement, index) => {
+        {props.statements.map((statement, index) => {
           return <Statement statement={statement} key={index} />;
         })}
         <div className="statement">
@@ -34,21 +33,18 @@ class Statements extends React.PureComponent {
         </div>
       </div>
     );
-  }
 }
 
-class Statement extends React.PureComponent {
-  render() {
+const Statement = (props) => {
     return (
       <div className="statement">
-        <div className="input-statement">{this.props.statement.input}</div>
+        <div className="input-statement">{props.statement.input}</div>
         <div
           className="return-statement"
-          dangerouslySetInnerHTML={{ __html: this.props.statement.return }}
+          dangerouslySetInnerHTML={{ __html: props.statement.return }}
         />
       </div>
     );
-  }
 }
 
 export default About;
