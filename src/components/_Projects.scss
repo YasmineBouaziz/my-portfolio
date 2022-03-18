@@ -1,0 +1,204 @@
+.projects-container {
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
+    0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.project-image {
+    height: auto;
+    width: 40%;
+    flex-basis: 50%;
+    /* margin-left: 5px; */
+    top: 0;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.project-image:hover{
+  // opacity: .5;
+
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+
+.project-background {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    height: 110%;
+    width: 83%;
+    background-size: cover;
+}
+
+
+.project-content {
+padding: 30px;
+width: 50%;
+z-index: 2;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.8em;
+    line-height: 38px;
+    color: rgb(37, 34, 34);
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.project-links {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+/* CSS */
+.project-link {
+  align-items: center;
+  background-color: rgb(254, 230, 227);
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.project-link:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.project-link:hover:after {
+  transform: translate(0, 0);
+}
+
+.project-link:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.project-link:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .project-link {
+    padding: 0 40px;
+  }
+}
+
+/* .project-link {
+    margin-right: 20px;
+    margin-top: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-sizing: border-box;
+    background: rgb(37, 34, 34);
+    color: #fff;
+}
+
+.project-link:hover {
+    background: rgb(37, 34, 34);
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+        0 3px 6px rgba(0, 0, 0, 0.08);
+} */
+
+.project-link.secondary {
+    background: rgb(254, 230, 227);
+    color: rgb(37, 34, 34);
+}
+
+.project-link.secondary:hover {
+        background: rgb(254, 230, 227);
+    }
+
+p {
+margin-bottom: 30px;
+line-height: 27px;
+color: rgb(37, 34, 34);
+}
+
+a {
+font-weight: bold;
+}
+
+.project-skills {
+display: flex;
+flex-wrap: wrap;
+}
+
+.project-skill {
+    border-radius: 4px;
+    /* border: solid 2px rgb(37, 34, 34); */
+    border: solid 2px rgb(254, 230, 227);
+
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+    font-size: 0.85em;
+    color: rgb(37, 34, 34);
+}
+
+.button2{
+  padding: 20px;
+  display: flex;
+}

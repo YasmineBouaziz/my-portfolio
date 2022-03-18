@@ -1,0 +1,36 @@
+
+
+/* @import './components/_About'; */
+
+body {
+  background-color: #F8F6F0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'pnum';
+  font-variant-numeric: proportional-nums;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+.section-title {
+  color: rgb(110, 103, 103);
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.section-title:after {
+  content: ' ';
+  border: 4px solid rgba(197, 72, 180, 0.65);
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50px;
+}
